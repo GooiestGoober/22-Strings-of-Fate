@@ -38,7 +38,7 @@ class CountingFierceTest {
     @ParameterizedTest
     @MethodSource ("providedNumbers_allSums")
     void sum_variousArrays_allValid_returnSumNumber (int[] arr, int sumValue) {
-        int sum = CountingFierce.sumElems(arr);
+        int sum = StringySpells.sumElems(arr);
         assertEquals(sumValue, sum);
     }
 
@@ -56,7 +56,7 @@ class CountingFierceTest {
     @ParameterizedTest
     @MethodSource ("providedNumbers_allAvg")
     void avg_variousArrays_allValid_returnAveNumber (int[] arr, int aveValue) {
-        int avg = CountingFierce.avgElems(arr);
+        int avg = StringySpells.avgElems(arr);
         assertEquals(aveValue, avg);
     }
 
@@ -65,7 +65,7 @@ class CountingFierceTest {
     void occurs_notInArray_returnZero () {
         int[] arr = {6, 5, 4, 9, 12, 7};
 
-        int occurs = CountingFierce.countOccurs(arr, 3);
+        int occurs = StringySpells.countOccurs(arr, 3);
         assertEquals(0, occurs);
     }
 
@@ -74,7 +74,7 @@ class CountingFierceTest {
     void occurs_theEntireArray_returnLength () {
         int[] arr = {21, 21, 21, 21, 21, 21};
 
-        int occurs = CountingFierce.countOccurs(arr, 21);
+        int occurs = StringySpells.countOccurs(arr, 21);
         assertEquals(arr.length, occurs);
     }
 
@@ -83,7 +83,7 @@ class CountingFierceTest {
     void occurs_onEvenIndexes_returnHalfRoundedUp () {
         int[] arr = {11, 58, 11, 9, 11, 25};
 
-        int occurs = CountingFierce.countOccurs(arr, 11);
+        int occurs = StringySpells.countOccurs(arr, 11);
         assertEquals(3, occurs);
     }
 
@@ -92,7 +92,7 @@ class CountingFierceTest {
     void occurs_onOddIndexes_returnHalfRoundedDown () {
         int[] arr = {4, 29, 1, 29, 9, 29};
 
-        int occurs = CountingFierce.countOccurs(arr, 29);
+        int occurs = StringySpells.countOccurs(arr, 29);
         assertEquals(3, occurs);
     }
 
@@ -101,7 +101,7 @@ class CountingFierceTest {
     void occurs_valueIsNegative_returnOnlyNegativeCount () {
         int[] arr = {18, 29, 63, -18, 7, 33};
 
-        int occurs = CountingFierce.countOccurs(arr, -18);
+        int occurs = StringySpells.countOccurs(arr, -18);
         assertEquals(1, occurs);
     }
 
@@ -110,7 +110,7 @@ class CountingFierceTest {
     void appears_valueIsInArray_returnTrue () {
         int[] arr = {81, 29, 63, 128, 994, 33};
 
-        boolean appears = CountingFierce.appearsIn(arr, 63);
+        boolean appears = StringySpells.appearsIn(arr, 63);
         assertTrue(appears);
     }
 
@@ -119,7 +119,7 @@ class CountingFierceTest {
     void appears_valueIsNotInArray_returnFalse () {
         int[] arr = {1, 784, 35, 564, 4, 27};
 
-        boolean appears = CountingFierce.appearsIn(arr, 19);
+        boolean appears = StringySpells.appearsIn(arr, 19);
         assertFalse(appears);
     }
 
@@ -128,7 +128,7 @@ class CountingFierceTest {
     void first_valueIsFirstIndex_returnZero () {
         int[] arr = {31, 84, 15, 71, 5644, 727};
 
-        int index = CountingFierce.firstAppear(arr, 31);
+        int index = StringySpells.firstAppear(arr, 31);
         assertEquals(0, index);
     }
 
@@ -137,7 +137,7 @@ class CountingFierceTest {
     void first_valueIsLastIndex_returnLengthMinusOne () {
         int[] arr = {351, 23, 53, 4, 3414, 727};
 
-        int index = CountingFierce.firstAppear(arr, 727);
+        int index = StringySpells.firstAppear(arr, 727);
         assertEquals(arr.length - 1, index);
     }
 
@@ -146,7 +146,7 @@ class CountingFierceTest {
     void first_valueIsNotInArray_returnNegOne () {
         int[] arr = {-42, 23, -53, 91, 632, -2322};
 
-        int index = CountingFierce.firstAppear(arr, -91);
+        int index = StringySpells.firstAppear(arr, -91);
         assertEquals(-1, index);
     }
 
@@ -155,7 +155,7 @@ class CountingFierceTest {
     void first_valueIsInMiddle_returnThree () {
         int[] arr = {53, -72, 97, -53, 76, 512, 22};
 
-        int index = CountingFierce.firstAppear(arr, -53);
+        int index = StringySpells.firstAppear(arr, -53);
         assertEquals(3, index);
     }
 
@@ -173,7 +173,7 @@ class CountingFierceTest {
     @ParameterizedTest
     @MethodSource ("providedNumbers_allMinimums")
     void min_variousArrays_allValid_returnMinimumNumber (int[] arr, int minValue) {
-        int min = CountingFierce.minValue(arr);
+        int min = StringySpells.minValue(arr);
         assertEquals(minValue, min);
     }
 
@@ -191,7 +191,7 @@ class CountingFierceTest {
     @ParameterizedTest
     @MethodSource ("providedNumbers_allMaximums")
     void max_variousArrays_allValid_returnMaximumNumber (int[] arr, int maxValue) {
-        int max = CountingFierce.maxValue(arr);
+        int max = StringySpells.maxValue(arr);
         assertEquals(maxValue, max);
 
     }
@@ -209,7 +209,7 @@ class CountingFierceTest {
     @ParameterizedTest
     @MethodSource ("providedNumbers_allRanges")
     void range_variousArrays_allValid_returnRangeNumber (int[] arr, int maxValue) {
-        int range = CountingFierce.rangeValue(arr);
+        int range = StringySpells.rangeValue(arr);
         assertEquals(maxValue, range);
 
     }

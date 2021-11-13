@@ -1,34 +1,21 @@
-# Counting Fierce
->Backstory of assignment here for lore purposes.
+# Stringy Spells
+>The Wizards Council is working on new sets of spells to teach the up and ocming wizard trainees.  These are all magic based on word analysis and choice.  Help the mages construct new spells by completing the tasks below.
 
 ## Objectives required to complete
-This quest has us working with methods and arrays.  We have a goal to determine various pieces of information about three `int` filled arrays.
+This quest has us working with methods and `String` objects.  We have a goal to determine various pieces of information about a number of pairs of `String` objects.
 
-### Objective 1 - Creating a project board
-Description on how to make a project board, template to select.
+### Objective 1 - Cloning the project
+Accept the assignment via the link on LHSTech or the GitHub Classroom.
 
-### Objective 2 - Designing a Plan 
-Description of what is expected in a design plan
+### Objective 2 - Making a Plan 
+Make a plan of attack on the assignment's specs below.
 
-### Objective 3 - Cloning
-Simple reminder to clone this repo into `IntelliJ` here.
-
-### Objective 4 - Branching from the master
-Description of how to branch from the `master` in `IntelliJ`.  Expectation is students have more than one branch when working on projects.  They merge branches into master at the end when submitting only the master branch is graded.
-
-**Note** For this practice I would suggest the following branching as it allows for decent practice. A `dev` branch off of the master.  Then each method gets its own branch off of the `dev`.  As these methods are completed they should be merged to the `dev` for testing.  If the methods test well then merge into the `master`.  You could add a `testing` branch between the method branches and the `dev` depends on how much practice you want to give.  While there are some "standards" to branching each company will have different requirements and ways to do it so practicing and find a flow that works best for you and your students is suggested.
+### Objective 3 - Commit AND Push
+Remembering to commit and push on a regular basis will help you stay current on tests and tasks.
 
 ## Quest Requirements
-**All methods should be static and method names should be as stated in order to avoid errors on unit tests. A note similar to this would be shared with students.**
+**All methods should be static and method names should be as stated in order to avoid errors on unit tests.**
 
-To get autograding 
-- Make an assignment on GitHub Classroom and use your repo as the starter code. 
-- On the last page when selecting autograding select the `Run Java` option
-- Give test a name
-- Setup command type `mvn compile`
-- Run command replace what is in there with `mvn test`
-- Recommend lowering the timeout to 1-3 minutes
-- Points Optional
 
 ### Objective 1 - The methods
 There are several various pieces of information we can pull from an array of numbers.  Doing these methods help us with method writing, array traversal, variable scope, and method calling.
