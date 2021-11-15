@@ -18,53 +18,23 @@ Remembering to commit and push on a regular basis will help you stay current on 
 
 
 ### Objective 1 - The methods
-There are several various pieces of information we can pull from an array of numbers.  Doing these methods help us with method writing, array traversal, variable scope, and method calling.
+There are several various pieces of information we can pull from some strings.  Doing these methods help us with method writing, `String` processing, variable scope, and method calling.
 
-- Sum the elements `sumElems`
+- Average and return (as a real number) the lengths of 2 strings: `aveLen`
 
-- Average the elements `avgElem`
+- Given 2 strings, return a string with the first letter of string 1 and the last letter of string 2 `alphaOmega`
 
-- Count occurrences `countOccurs`
-	- count the number of occurrences in the array of a passed value
-	- the array should be the first param
+- Given a string, return a string with the middle letter of a given string `middleFinder`
+	- strings with even lengths "round up"; i.e., `code` would return `d`
 
-- Determine presence or absence of a value `appearsIn`
-	- use the `countOccurs` to help
-	- result should be `true` or `false`
-	- the array should be the first param
+- Given 2 strings, return a string consisting of the first letter of the second string followed by the letters following the first letter of the first string `flipper`
 
-- Determine first location `firstAppear`
-	- find the first index of a passed value
-    - the array should be the first param
-    - return -1 if not found
-
-- Find the minimum number `minValue`
-
-- Find the maximum number `maxValue`
-
-- Find the range `rangeValue`
-	- use `minValue` and `maxValue` to help
+- Given a string and an integer, return a new string containing all letters from the original string except for the character at the specified index `subtractive`
 	
 ### Objective 2 - Finishing the main
-- Call all the methods on each array in the main
+- Call all the methods on some test data in the main
 - Display the various results to the user in a friendly format
 
-**Bonus**
-Find the standard deviation of an array of the following: 600, 470, 170, 430, 300, 280, 389
+### Objective 3 - Committing and Pushing
+Reminder to push code from `IntelliJ` back to GitHub.  
 
-- Calculated standard deviation rounded to the nearest whole number
-- Only outside method you are allowed to call is `Math.sqrt()`
-	- no other outside Java methods or methods a "friend" has helped you with
-
-Formula for standard deviation for our purposes is `the square root of the variance`.  The variance is defined as `the average of the squared differences from the mean`.
-
-### Objective 2 - Pushing
-Reminder to push code from `IntelliJ` back to GitHub.  Another reminder to merge back into master before making the final push.
-
-
-#### Grading
-|   Points     |   Requirement    |
-| :----------: |:---------------- |
-| 2            | ZZZ              |
-| 2            | YYY              |
-| 2            | Bonus correct    |
