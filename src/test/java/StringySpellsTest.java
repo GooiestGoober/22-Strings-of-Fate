@@ -46,7 +46,7 @@ class StringySpellsTest {
     @ParameterizedTest
     @MethodSource("providedStrings_allMids")
     void findMids(String a, String b, String m){
-        String ans = middleFinder(a,b);
+        String ans = StringySpells.middleFinder(a,b);
         assertEquals(m,ans);
     }
 
@@ -68,7 +68,7 @@ class StringySpellsTest {
     @ParameterizedTest
     @MethodSource("providedStrings_allSubs")
     void findSubs(String a, int b, String m){
-        String ans = subtractive(a,b);
+        String ans = StringySpells.subtractive(a,b);
         assertEquals(m,ans);
     }
 
@@ -92,7 +92,7 @@ class StringySpellsTest {
     @ParameterizedTest
     @MethodSource("providedStrings_allAlOms")
     void findAlOms(String a, String b, String m){
-        String ans = alphaOmega(a,b);
+        String ans = StringySpells.alphaOmega(a,b);
         assertEquals(m,ans);
     }
 
@@ -116,7 +116,7 @@ class StringySpellsTest {
     @ParameterizedTest
     @MethodSource("providedStrings_allFlips")
     void findFlips(String a, String b, String m){
-        String ans = flipper(a,b);
+        String ans = StringySpells.flipper(a,b);
         assertEquals(m,ans);
     }
 
@@ -140,7 +140,7 @@ class StringySpellsTest {
     @ParameterizedTest
     @MethodSource("providedStrings_allAves")
     void findAves(String a, String b, double m){
-        double ans = aveLen(a,b);
+        double ans = StringySpells.aveLen(a,b);
         assertEquals(m,ans,0.1);
     }
 
