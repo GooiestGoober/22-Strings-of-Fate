@@ -67,7 +67,7 @@ class StringySpellsTest {
     @DisplayName("Remove a Letter")
     @ParameterizedTest
     @MethodSource("providedStrings_allSubs")
-    void findMids(String a, int b, String m){
+    void findSubs(String a, int b, String m){
         String ans = subtractive(a,b);
         assertEquals(m,ans);
     }
@@ -91,7 +91,7 @@ class StringySpellsTest {
     @DisplayName("Start and End Letters")
     @ParameterizedTest
     @MethodSource("providedStrings_allAlOms")
-    void findMids(String a, String b, String m){
+    void findAlOms(String a, String b, String m){
         String ans = alphaOmega(a,b);
         assertEquals(m,ans);
     }
@@ -115,7 +115,7 @@ class StringySpellsTest {
     @DisplayName("Flip the letter")
     @ParameterizedTest
     @MethodSource("providedStrings_allFlips")
-    void findMids(String a, String b, String m){
+    void findFlips(String a, String b, String m){
         String ans = flipper(a,b);
         assertEquals(m,ans);
     }
@@ -139,7 +139,7 @@ class StringySpellsTest {
     @DisplayName("Average of Lengths")
     @ParameterizedTest
     @MethodSource("providedStrings_allAves")
-    void findMids(String a, String b, double m){
+    void findAves(String a, String b, double m){
         double ans = aveLen(a,b);
         assertEquals(m,ans,0.1);
     }
